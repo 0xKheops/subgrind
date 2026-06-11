@@ -1,5 +1,9 @@
 # subgrind
 
+[![CI](https://github.com/0xKheops/subgrind/actions/workflows/ci.yml/badge.svg)](https://github.com/0xKheops/subgrind/actions/workflows/ci.yml)
+[![crates.io](https://img.shields.io/crates/v/subgrind.svg)](https://crates.io/crates/subgrind)
+[![License: MIT OR Apache-2.0](https://img.shields.io/badge/license-MIT%20OR%20Apache--2.0-blue.svg)](#license)
+
 Fast **vanity address generator** for Substrate / Polkadot / Bittensor.
 It grinds random BIP39 mnemonics (12 or 24 words) and derives the SS58 account
 address until one matches a regex.
@@ -12,6 +16,9 @@ dev-phrase test vector (`cargo test`).
 ```bash
 cargo install subgrind
 ```
+
+Or grab a prebuilt binary for Linux, macOS, or Windows from the
+[releases page](https://github.com/0xKheops/subgrind/releases).
 
 Or build from source:
 
