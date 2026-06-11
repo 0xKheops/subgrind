@@ -1,3 +1,15 @@
+# Builds prebuilt binaries (Linux x86_64/aarch64, macOS Intel/ARM, Windows)
+# and attaches them to the GitHub release whenever a v* tag is pushed.
+#
+# Cutting a release:
+#   1. Bump `version` in Cargo.toml, run `cargo check` (refreshes Cargo.lock),
+#      commit, push, wait for CI to go green.
+#   2. cargo publish
+#   3. git tag -m "subgrind vX.Y.Z" vX.Y.Z && git push origin vX.Y.Z
+#   4. gh release create vX.Y.Z --title "subgrind vX.Y.Z" --notes "..."
+#      Do this right after pushing the tag — otherwise this workflow creates
+#      a bare release (no notes) when the first binary finishes building.
+
 name: Release
 
 on:
