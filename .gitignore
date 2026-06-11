@@ -1,0 +1,17 @@
+# Rust build artifacts
+/target/
+
+# rustfmt backups
+**/*.rs.bk
+
+# Debug symbols (MSVC)
+*.pdb
+
+# macOS
+.DS_Store
+
+# Editors / IDEs
+.idea/
+.vscode/
+*.swp
+*~
