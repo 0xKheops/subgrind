@@ -8,7 +8,7 @@ license = "MIT OR Apache-2.0"
 repository = "https://github.com/0xKheops/subgrind"
 homepage = "https://github.com/0xKheops/subgrind"
 readme = "README.md"
-keywords = ["substrate", "polkadot", "vanity", "ss58", "cli"]
+keywords = ["substrate", "polkadot", "bittensor", "vanity", "ss58", "cli"]
 categories = ["command-line-utilities", "cryptography"]
 
 [dependencies]
